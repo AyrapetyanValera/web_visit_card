@@ -124,6 +124,9 @@ body{
 
 /*Мобильная адаптация*/
 @media (max-width: 480px){
+    body{
+        padding: 10px;
+    }
     .container{
         max-width: 95%;
     }
@@ -151,3 +154,4 @@ body{
     }
 
 }
+
