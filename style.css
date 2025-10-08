@@ -93,6 +93,27 @@ body{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.instagram {
+    position: relative;
+}
+
+.instagram:hover::after {
+    content: attr(data-hover);
+    position: absolute;
+    content: "Принадлежит компании Meta,\A признанной экстремистской и запрещённой на территории РФ";
+    white-space: pre-line;
+    width: 180px;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.7em;
+    z-index: 100;
+    pointer-events: none;
+}
 
 .btn-text{
     color: #fff;
@@ -128,4 +149,5 @@ body{
     .btn-text{
         font-size: 1.5em;
     }
+
 }
